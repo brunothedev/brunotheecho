@@ -6,7 +6,7 @@ int
 main( int argc, char *argv[] )
 {
 	/* Reading arguments */
-	if ( argv[1] == NULL ) {
+	if ( argc == 1 ) {
 		fprintf(stderr, "[USAGE]: brthecho [opts] [args]\n");
 		exit(1);
 	} else if ( strcmp(argv[1], "-v") == 0 ) {
